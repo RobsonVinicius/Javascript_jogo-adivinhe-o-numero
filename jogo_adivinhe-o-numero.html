@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    
+    
+    
+    </head>
+    
+    <script>
+        
+   var pulaLinha = function() {
+            document.write("<br>");
+        };
+        
+   var mostra = function(frase) {
+           document.write(frase);
+           pulaLinha();
+           pulaLinha();
+                               
+       }
+   
+    var numeroPensado = Math.round(Math.random()*5); // computador pense em um número de 0 a 5
+    var chute = prompt("Já pensei em um número. De 0 a 5 qual você acha que é?"); // mostre na tela 
+        
+    if(chute == numeroPensado) {
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado + ", parabéns!!!"); // se o usuário acertou mostre isso
+                
+    }
+    
+    else {
+        mostra("Você errou! Eu tinha pensado no " + numeroPensado + ", mas não desanime recarre a página novamente para você adivinhar outro número"); // mas se o usuário errou mostre esse
+        
+        
+    }
+     
+        
+        
+    </script>
+    
+</html>
